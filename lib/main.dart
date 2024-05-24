@@ -49,7 +49,7 @@ class _ImagePickerDemoState extends State<ImagePickerDemo> {
 
   Future<void> _pickImage() async {
     try {
-      final XFile? image = await _picker.pickImage(source: ImageSource.gallery);
+      final XFile? image = await _picker.pickImage(source: ImageSource.camera);
       setState(() {
         _image = image;
         file = File(image!.path);
